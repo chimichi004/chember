@@ -1,5 +1,5 @@
 <?php 
-require_once('controllers/font.php'); ?>
+   require_once('controllers/font.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,43 +99,43 @@ require_once('controllers/font.php'); ?>
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                   <a class="navbar-brand" href="index.php"><b>Josenian Helpfie</b></a>         
-               </div>
+                     <a class="navbar-brand" href="index.php"><b>Josenian Helpfie</b></a>         
+                </div>
 
-               <div class="collapse navbar-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="login.php">Login</a></li>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="login.php">Login</a></li>
 
-                </ul>
-            </div>
-        </div><!--/.container-->
-    </nav><!--/nav-->
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
 
-</header><!--/header-->
+    </header><!--/header-->
 
 
 
-<section id="services" class="service-item">
-   <div class="container">
-    <div class="center wow fadeInDown">
-        <h2>Already a Member?</h2>
+    <section id="services" class="service-item">
+     <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Already a Member?</h2>
 
-    </div>
+        </div>
 
-    <div class="row">
+        <div class="row">
 
-        <div class="col-sm-15 col-md-15">
-          <div class="frm-wrapper">
-              <div class="row">
-                <div class=" col-sm-12 col-md-offset-7">
-                  <div class="login-panel">
-                    <div class="panel-heading">
+            <div class="col-sm-15 col-md-15">
+              <div class="frm-wrapper">
+                  <div class="row">
+                    <div class=" col-sm-12 col-md-offset-7">
+                      <div class="login-panel">
+                        <div class="panel-heading">
 
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                          <div class="col-sm-12 ">
-                             <form  action="components/login-process.php" method="post" name="login">
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                              <div class="col-sm-12 ">
+                               <form  action="components/login-process.php" method="post" name="login">
                                 <div class="input-group input-group-sm">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                   <input type="text" class="form-control" id="email" name="username" placeholder="Username" required>
@@ -149,15 +149,15 @@ require_once('controllers/font.php'); ?>
 
 
                               <div>
-                                  <button class="btn btn-lg btn-primary btn-block" class="btn btn-success" name="register">Login to your account</button>
-                              </div>  
-                            </form>
-                      </div> 
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                              <button class="btn btn-lg btn-primary btn-block" class="btn btn-success" name="register">Login to your account</button>
+                            </div>  
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 

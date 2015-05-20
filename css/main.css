@@ -465,7 +465,7 @@ input.search-form:hover {
 #main-slider .carousel-indicators li {
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #000;
   margin: 0 15px 0 0;
   position: relative;
 }
@@ -477,7 +477,7 @@ input.search-form:hover {
   height: 24px;
   border-radius: 100%;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #FFF;
+  border: 1px solid #000;
   left: -3px;
   top: -3px;
 }
@@ -2535,5 +2535,3 @@ shortcodes page css
   background: #000 url(../images/services/bg2.jpg);
   background-size: cover;
 }
-
-

@@ -295,18 +295,44 @@ $row = mysqli_fetch_array($result);
                   <?php } ?>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </tbody>
               </table>
               
+
+
+
+
             </div>
- </div>
 
 
 
 
 
 
-<!-- COMMENT TAB -->
+          </div>
+
           <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledBy="profile-tab"><br>
            <p>
             <?php require_once('get_comments.php') ?>

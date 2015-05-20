@@ -28,6 +28,24 @@
 
 
     <style>
+        body{
+            background-color: #ccffcc;
+        }
+        .imagecarousel{
+            width: 100%;
+            height: 400px !important;
+        }
+        #carousel-example-generic{
+          width: 50%;
+          height: 400px;
+          margin-left: 47%;
+          margin-top: 84px;
+          margin-bottom: 180px;
+          
+        }
+        .item{
+            border-radius: 4px;
+        }
         .login-panel{
             width: 100%;
             position: absolute;
@@ -36,6 +54,8 @@
             background: rgba(0, 0, 0, 0.8);
             border-radius: 1em;
             text-align: center;
+            margin-left: -50px;
+            margin-top: 50px;
         }
         .letter{
             font-size: 30px;
@@ -79,19 +99,21 @@
         }
 
         .carousel-caption{
-            bootom:auto;
+            bottom:auto;
             top:100px;
         }
 
         /* carousel custom fade effect */
         .carousel.carousel-fade{
-            background:#2ecc34;
+            background:white;
         }
         .carousel-inner{
-            min-height:500px;
+            min-height:400px;
+            max-height: 400px;
         }
         .carousel.carousel-fade .carousel-inner >.item {
-            -webkit-transition: opacity 0.7s ease-in-out;
+            -webkit-transition: opacity 0.7
+            s ease-in-out;
             -moz-transition: opacity 0.7s ease-in-out;
             -ms-transition: opacity 0.7s ease-in-out;
             -o-transition: opacity 0.7s ease-in-out;
@@ -170,7 +192,8 @@
                 z-index:1020;
             }
             .carousel-inner{
-                min-height:500px;
+                min-height:400px;
+                max-height: 400px;
                 max-width:768px;
                 overflow:hidden;
             }
@@ -199,8 +222,14 @@
 
         }
         .pic-center{
-            padding-left: 60%;
-            padding-top: 10%;
+            padding-left: 25%;
+        }
+        .pic-size{
+            width: 300px;
+            height: 100px;
+        }
+        .carousel-background{
+            background-color: #EEFFEE;
         }
     </style>
 
@@ -229,40 +258,78 @@
     </header><!--/header-->
 
     <section id="main-slider" class="no-margin">
-       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
-    <li data-target="#carousel" data-slide-to="3"></li>
-    <li data-target="#carousel" data-slide-to="4"></li>
-    <li data-target="#carousel" data-slide-to="5"></li>
-    <li data-target="#carousel" data-slide-to="6"></li>
-    <li data-target="#carousel" data-slide-to="7"></li>
-    <li data-target="#carousel" data-slide-to="8"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"><img class="imagecarousel" src="images/slider/1.png"></div>
-    <div class="item"><img class="imagecarousel" src="images/slider/2.png"></div>
-    <div class="item"><img class="imagecarousel" src="images/slider/3.png"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/Boy2_3.gif"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/hand.gif"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/money.gif"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/sand-clock-loading.gif"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/stuff.gif"></div>
-    <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/stuff-no-smooth.gif"></div>
-  </div>
-  <!-- Carousel nav -->
-
-</div>
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+       <!-- <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+            <li data-target="#carousel" data-slide-to="5"></li>
+            <li data-target="#carousel" data-slide-to="6"></li>
+            <li data-target="#carousel" data-slide-to="7"></li>
+            <li data-target="#carousel" data-slide-to="8"></li>
+          </ol>
+          Carousel items
+          <div class="carousel-inner">
+            <div class="active item pic-center"><img class="imagecarousel pic-size" src="images/slider/1.png"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/slider/2.png"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-soze" src="images/slider/3.png"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/Boy2_3.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/hand.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/money.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/sand-clock-loading.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/stuff.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel " src="images/try-gif/stuff-no-smooth.gif"></div>
+          </div>
+          Carousel nav
+          <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
             <i class="fa fa-chevron-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
-        </a>
+            </a>
+            <a class="next hidden-xs" href="#main-slider" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
 
+    </div> -->
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner carousel-background" role="listbox">
+        <div class="active item"><img class="imagecarousel" src="images/slider/1.png"></div>
+            <div class="item"><img class="imagecarousel" src="images/slider/2.png"></div>
+            <div class="item"><img class="imagecarousel" src="images/slider/3.png"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/Boy2_3.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/hand.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/money.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/sand-clock-loading.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/stuff.gif"></div>
+            <div class="item pic-center"><img class="imagecarousel pic-size" src="images/try-gif/stuff-no-smooth.gif"></div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+        
+</section><!--/#main-slider-->
 
         <div class="frm-wrapper">
             <div class="row">
@@ -322,7 +389,7 @@
 </div>
 </div>
 
-</section><!--/#main-slider-->
+
 
 
 
@@ -444,21 +511,6 @@
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#recent-works-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <footer id="footer" class="midnight-blue">
     <div class="container">
